@@ -1,0 +1,320 @@
+
+<!-- saved from url=(0111)https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&dir=public_html&order=name&srt=yes -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>QuiXplorer 2.3 - the QuiX project</title>
+<link href="./QuiXplorer 2.3 - the QuiX project_files/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" media="screen" href="chrome-extension://ocifcogajbgikalbpphmoedjlcfjkhgh/css/style.css"></head>
+<body><center>
+<table border="0" width="100%" cellspacing="0" cellpadding="5"><tbody>
+<tr><td class="title">Directory: /public_html</td></tr></tbody></table>
+
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+	// Checkboxes
+	function Toggle(e) {
+		if(e.checked) {
+			Highlight(e);
+			document.selform.toggleAllC.checked = AllChecked();
+		} else {
+			UnHighlight(e);
+			document.selform.toggleAllC.checked = false;
+		}
+   	}
+
+	function ToggleAll(e) {
+		if(e.checked) CheckAll();
+		else ClearAll();
+	}
+	
+	function CheckAll() {
+		var ml = document.selform;
+		var len = ml.elements.length;
+		for(var i=0; i<len; ++i) {
+			var e = ml.elements[i];
+			if(e.name == "selitems[]") {
+				e.checked = true;
+				Highlight(e);
+			}
+		}
+		ml.toggleAllC.checked = true;
+	}
+
+	function ClearAll() {
+		var ml = document.selform;
+		var len = ml.elements.length;
+		for (var i=0; i<len; ++i) {
+			var e = ml.elements[i];
+			if(e.name == "selitems[]") {
+				e.checked = false;
+				UnHighlight(e);
+			}
+		}
+		ml.toggleAllC.checked = false;
+	}
+   
+	function AllChecked() {
+		ml = document.selform;
+		len = ml.elements.length;
+		for(var i=0; i<len; ++i) {
+			if(ml.elements[i].name == "selitems[]" && !ml.elements[i].checked) return false;
+		}
+		return true;
+	}
+	
+	function NumChecked() {
+		ml = document.selform;
+		len = ml.elements.length;
+		num = 0;
+		for(var i=0; i<len; ++i) {
+			if(ml.elements[i].name == "selitems[]" && ml.elements[i].checked) ++num;
+		}
+		return num;
+	}
+	
+	
+	// Row highlight
+
+	function Highlight(e) {
+		var r = null;
+		if(e.parentNode && e.parentNode.parentNode) {
+			r = e.parentNode.parentNode;
+		} else if(e.parentElement && e.parentElement.parentElement) {
+			r = e.parentElement.parentElement;
+		}
+		if(r && r.className=="rowdata") {
+			r.className = "rowdatasel";
+		}
+	}
+
+	function UnHighlight(e) {
+		var r = null;
+		if(e.parentNode && e.parentNode.parentNode) {
+			r = e.parentNode.parentNode;
+		} else if (e.parentElement && e.parentElement.parentElement) {
+			r = e.parentElement.parentElement;
+		}
+		if(r && r.className=="rowdatasel") {
+			r.className = "rowdata";
+		}
+	}
+	
+	
+	// Copy / Move / Delete
+
+	function Rename() {
+		if(NumChecked()==0) {
+			alert("You haven't selected any item(s).");
+			return;
+		}
+		document.selform.do_action.value = "rename";
+		document.selform.submit();
+	}
+	
+	function Copy() {
+		if(NumChecked()==0) {
+			alert("You haven't selected any item(s).");
+			return;
+		}
+		document.selform.do_action.value = "copy";
+		document.selform.submit();
+	}
+	
+	function Move() {
+		if(NumChecked()==0) {
+			alert("You haven't selected any item(s).");
+			return;
+		}
+		document.selform.do_action.value = "move";
+		document.selform.submit();
+	}
+	
+	function Delete() {
+		num=NumChecked();
+		if(num==0) {
+			alert("You haven't selected any item(s).");
+			return;
+		}
+		if(confirm("Are you sure you want to delete these "+num+" item(s)?")) {
+			document.selform.do_action.value = "delete";
+			document.selform.submit();
+		}
+	}
+	
+	function Archive() {
+		if(NumChecked()==0) {
+			alert("You haven't selected any item(s).");
+			return;
+		}
+		document.selform.do_action.value = "arch";
+		document.selform.submit();
+	}
+	
+	function Extract() {
+		if(NumChecked()==0) {
+			alert("You haven't selected any item(s).");
+			return;
+		}
+		document.selform.do_action.value = "extract";
+		document.selform.submit();
+	}
+	
+
+// -->
+</script>
+<br><table width="95%"><tbody><tr><td><table><tbody><tr>
+<td><table><tbody><tr><td style="text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_up.gif" alt="UP" title="UP"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;order=name&amp;srt=yes">Up</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_home.gif" alt="HOME" title="HOME"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;order=name&amp;srt=yes">Home</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="javascript:location.reload();"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_refresh.gif" alt="RELOAD" title="RELOAD"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="javascript:location.reload();">Reload</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=search&amp;dir=public_html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_search.gif" alt="SEARCH" title="SEARCH"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=search&amp;dir=public_html&amp;order=name&amp;srt=yes">Search</a></td></tr></tbody></table></td>
+<td>::</td><td><table><tbody><tr><td style="text-align: center;"><a href="javascript:Rename();"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_rename.gif" alt="RENAME" title="RENAME"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="javascript:Rename();">Rename</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="javascript:Copy();"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_copy.gif" alt="COPY" title="COPY"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="javascript:Copy();">Copy</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="javascript:Move();"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_move.gif" alt="MOVE" title="MOVE"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="javascript:Move();">Move</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="javascript:Delete();"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_delete.gif" alt="DELETE" title="DELETE"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="javascript:Delete();">Delete</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=upload&amp;dir=public_html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_upload.gif" alt="UPLOAD" title="UPLOAD"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=upload&amp;dir=public_html&amp;order=name&amp;srt=yes">Upload</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="javascript:Archive();"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_archive.gif" alt="ARCHIVE" title="ARCHIVE"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="javascript:Archive();">Archive</a></td></tr></tbody></table></td>
+<td><table><tbody><tr><td style="text-align: center;"><a href="javascript:Extract();"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_archive.gif" alt="EXTRACT" title="EXTRACT"></a></td></tr><tr><td style="font-size: 8px; text-align: center;"><a href="javascript:Extract();">Extract</a></td></tr></tbody></table></td>
+</tr></tbody></table></td>
+<td align="right"><table><form action="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=mkitem&amp;dir=public_html&amp;order=name&amp;srt=yes" method="post"></form>
+<tbody><tr><td><select name="mktype"><option value="file">File</option><option value="dir">Directory</option></select>
+<input name="mkname" type="text" size="15"><input type="submit" value="Create"></td></tr></tbody></table></td>
+</tr></tbody></table>
+<table width="95%"><form name="selform" method="POST" action="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=post&amp;dir=public_html&amp;order=name&amp;srt=yes"></form>
+<input type="hidden" name="do_action"><input type="hidden" name="first" value="y">
+<tbody><tr><td colspan="7"><hr></td></tr><tr><td width="2%" class="header">
+<input type="checkbox" name="toggleAllC" onclick="javascript:ToggleAll(this);"></td>
+<td width="44%" class="header"><b>
+<a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;dir=public_html&amp;order=name&amp;srt=no">Name&nbsp;<img width="10" height="10" border="0" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_arrowup.gif" alt="^"></a></b></td>
+<td width="10%" class="header"><b><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;dir=public_html&amp;order=size&amp;srt=yes">Size</a></b></td>
+<td width="16%" class="header"><b><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;dir=public_html&amp;order=type&amp;srt=yes">Type</a></b></td>
+<td width="14%" class="header"><b><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;dir=public_html&amp;order=mod&amp;srt=yes">Modified</a></b></td><td width="8%" class="header"><b>Perm's</b>
+</td><td width="6%" class="header"><b>Actions</b></td></tr>
+<tr><td colspan="7"><hr></td></tr>
+<tr class="rowdata"><td><input type="checkbox" name="selitems[]" value="cgi-bin" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;dir=public_html%2Fcgi-bin&amp;order=name&amp;srt=yes" target=""><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/dir.gif" alt="">&nbsp;cgi-bin</a></td>
+<td>4 KB</td>
+<td>Directory</td>
+<td>2015/04/03 01:55</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=cgi-bin&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">drwxr-xr-x</a></td>
+<td>
+<table>
+<tbody><tr><td><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_.gif" alt=""></td>
+<td><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_.gif" alt=""></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdata"><td><input type="checkbox" name="selitems[]" value="images" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;dir=public_html%2Fimages&amp;order=name&amp;srt=yes" target=""><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/dir.gif" alt="">&nbsp;images</a></td>
+<td>4 KB</td>
+<td>Directory</td>
+<td>2017/06/16 20:33</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=images&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">drwxr-xr-x</a></td>
+<td>
+<table>
+<tbody><tr><td><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_.gif" alt=""></td>
+<td><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_.gif" alt=""></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdata"><td><input type="checkbox" name="selitems[]" value="public_html" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=list&amp;dir=public_html%2Fpublic_html&amp;order=name&amp;srt=yes" target=""><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/dir.gif" alt="">&nbsp;public_html</a></td>
+<td>4 KB</td>
+<td>Directory</td>
+<td>2017/06/17 02:44</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=public_html&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">drwxr-xr-x</a></td>
+<td>
+<table>
+<tbody><tr><td><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_.gif" alt=""></td>
+<td><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_.gif" alt=""></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdatasel"><td><input type="checkbox" name="selitems[]" value="TMP15vwqm9q5m.htm" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/html.gif" alt="">&nbsp;TMP15vwqm9q5m.htm</a></td>
+<td>3.84 KB</td>
+<td>HTML Page</td>
+<td>2015/04/03 23:03</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=TMP15vwqm9q5m.htm&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">-rw-r--r--</a></td>
+<td>
+<table>
+<tbody><tr><td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=edit&amp;dir=public_html&amp;item=TMP15vwqm9q5m.htm&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_edit.gif" alt="EDIT" title="EDIT"></a></td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=download&amp;dir=public_html&amp;item=TMP15vwqm9q5m.htm&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_download.gif" alt="DOWNLOAD" title="DOWNLOAD"></a></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdatasel"><td><input type="checkbox" name="selitems[]" value="contactus.html" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/html.gif" alt="">&nbsp;contactus.html</a></td>
+<td>2.36 KB</td>
+<td>HTML Page</td>
+<td>2015/04/04 03:55</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=contactus.html&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">-rw-r--r--</a></td>
+<td>
+<table>
+<tbody><tr><td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=edit&amp;dir=public_html&amp;item=contactus.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_edit.gif" alt="EDIT" title="EDIT"></a></td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=download&amp;dir=public_html&amp;item=contactus.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_download.gif" alt="DOWNLOAD" title="DOWNLOAD"></a></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdatasel"><td><input type="checkbox" name="selitems[]" value="h-and-d-truck.jpg" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/image.gif" alt="">&nbsp;h-and-d-truck.jpg</a></td>
+<td>102.62 KB</td>
+<td>JPG Picture</td>
+<td>2015/04/03 23:42</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=h-and-d-truck.jpg&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">-rw-r--r--</a></td>
+<td>
+<table>
+<tbody><tr><td><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_.gif" alt=""></td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=download&amp;dir=public_html&amp;item=h-and-d-truck.jpg&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_download.gif" alt="DOWNLOAD" title="DOWNLOAD"></a></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdatasel"><td><input type="checkbox" name="selitems[]" value="index.html" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/html.gif" alt="">&nbsp;index.html</a></td>
+<td>1.31 KB</td>
+<td>HTML Page</td>
+<td>2017/06/16 20:51</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=index.html&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">-rw-r--r--</a></td>
+<td>
+<table>
+<tbody><tr><td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=edit&amp;dir=public_html&amp;item=index.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_edit.gif" alt="EDIT" title="EDIT"></a></td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=download&amp;dir=public_html&amp;item=index.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_download.gif" alt="DOWNLOAD" title="DOWNLOAD"></a></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdata"><td><input type="checkbox" name="selitems[]" value="index2015.html" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/html.gif" alt="">&nbsp;index2015.html</a></td>
+<td>5.88 KB</td>
+<td>HTML Page</td>
+<td>2015/05/07 00:38</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=index2015.html&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">-rw-r--r--</a></td>
+<td>
+<table>
+<tbody><tr><td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=edit&amp;dir=public_html&amp;item=index2015.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_edit.gif" alt="EDIT" title="EDIT"></a></td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=download&amp;dir=public_html&amp;item=index2015.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_download.gif" alt="DOWNLOAD" title="DOWNLOAD"></a></td>
+</tr></tbody></table>
+</td></tr>
+<tr class="rowdata"><td><input type="checkbox" name="selitems[]" value="index_old.html" onclick="javascript:Toggle(this);"></td>
+<td nowrap=""><a><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/html.gif" alt="">&nbsp;index_old.html</a></td>
+<td>35.3 KB</td>
+<td>HTML Page</td>
+<td>2015/04/03 01:55</td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=chmod&amp;dir=public_html&amp;item=index_old.html&amp;order=name&amp;srt=yes" title="CHANGE PERMISSIONS">-rw-r--r--</a></td>
+<td>
+<table>
+<tbody><tr><td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=edit&amp;dir=public_html&amp;item=index_old.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_edit.gif" alt="EDIT" title="EDIT"></a></td>
+<td><a href="https://traian.lunariffic.com:20082/myadmin/quixplorer/index.php?action=download&amp;dir=public_html&amp;item=index_old.html&amp;order=name&amp;srt=yes"><img border="0" width="16" height="16" align="ABSMIDDLE" src="./QuiXplorer 2.3 - the QuiX project_files/_download.gif" alt="DOWNLOAD" title="DOWNLOAD"></a></td>
+</tr></tbody></table>
+</td></tr>
+<tr><td colspan="7"><hr></td></tr><tr>
+<td class="header"></td><td class="header">9 Item(s) (Free: 57.56 GB)</td>
+<td class="header">163.31 KB</td>
+<td class="header"></td><td class="header"></td><td class="header"></td><td class="header"></td></tr>
+<tr><td colspan="7"><hr></td></tr></tbody></table>
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+	// Uncheck all items (to avoid problems with new items)
+	var ml = document.selform;
+	var len = ml.elements.length;
+	for(var i=0; i<len; ++i) {
+		var e = ml.elements[i];
+		if(e.name == "selitems[]" && e.checked == true) {
+			e.checked=false;
+		}
+	}
+// -->
+</script>
+<hr><small><a class="title" href="http://quixplorer.sourceforge.net/" target="_blank">QuiXplorer 2.3</a> - <a href="http://quix.tk/" target="_blank">the QuiX project</a></small></center>
+<div id="pmo-dp-content-hook" style="display: none; width: 1px; height: 1px;"></div></body></html>
